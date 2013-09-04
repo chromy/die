@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+#local faces = "⚀⚁⚂⚃⚄⚅"
+
+die() {
+    #XXX: assert $1 format here
+    local num=$(echo $1 | cut -f 1 -d'd')
+    local range=$(echo $1 | cut -f 2 -d'd')
+    local delim='\n'
+    for ((i=0; i<$num; i++))
+    do
+        local r=$(($RANDOM % $range + 1))
+        printf $r
+        if [ $(($i+1)) -lt $num ]
+        then
+            printf $delim
+        fi
+    done
+    printf '\n'
+}
+
+die "$@"
