@@ -16,10 +16,11 @@ $ ./die 1d100
 Testing
 -------
 You'll need [roundup](https://github.com/bmizerany/roundup)
+If you use Homebrew:
 ```bash
 $ brew install roundup
 ```
-If you are have Homebrew otherwise look at the [install guide](https://github.com/bmizerany/roundup/blob/master/INSTALLING#files)
+Otherwise take a look at the [install guide](https://github.com/bmizerany/roundup/blob/master/INSTALLING#files).
 
 Then run the tests with:
 ```bash
@@ -29,7 +30,7 @@ $ ./die_test.sh
 More Examples
 -------------
 
-Sum dice rolls:
+Sum many dice rolls:
 ```bash
 $ ./die 100d6 | paste -sd+ - | bc
 ```
