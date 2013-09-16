@@ -37,3 +37,4 @@ $ ./die 100d6 | paste -sd+ - | bc
 Improvements and Comments Welcome
 ---------------------------------
 Thanks for watching!
+
